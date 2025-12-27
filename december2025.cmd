@@ -41,7 +41,7 @@ netsh advfirewall firewall add rule name="AdobeCCXProcess (Inbound)" dir=in acti
 netsh advfirewall firewall add rule name="AdobeCCXProcess (Outbound)" dir=out action=block program="%ProgramFiles(x86)%\Adobe\Adobe Creative Cloud Experience\CCXProcess.exe" enable=yes
 
 REM --- filmora ---
-set "filmora_path=%USERPROFILE%\AppData\Local\Wondershare\Wondershare Filmora\14.9.3.14445"
+set "filmora_path=%USERPROFILE%\AppData\Local\Wondershare\Wondershare Filmora\15.0.11.16306"
 powershell -Command "Add-MpPreference -ExclusionPath '%filmora_path%\FCore.dll'"
 powershell -Command "Add-MpPreference -ExclusionPath '%filmora_path%\FExportView.dll'"
 powershell -Command "Add-MpPreference -ExclusionPath '%filmora_path%\FFWsRegister.dll'"
